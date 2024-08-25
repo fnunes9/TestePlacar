@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DW SPORTS - Cadastro</title>
+    <link rel="stylesheet" href="style-register.css">
+</head>
+<body>
+    <main>
+        <section class="register-form">
+            <h1>Cadastro</h1>
+            <form id="registerForm">
+                <div>
+                    <label for="fullName">Nome completo:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                <div>
+                    <label for="dob">Data de nascimento:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <div>
+                    <label for="phone">Telefone:</label>
+                    <input type="tel" id="phone" name="phone" pattern="\(\d{2}\) \d{5}-\d{4}" placeholder="(xx) xxxxx-xxxx" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="teamName">Nome da equipe:</label>
+                    <input type="text" id="teamName" name="teamName" required>
+                </div>
+                <div>
+                    <label for="teacherName">Nome do professor:</label>
+                    <input type="text" id="teacherName" name="teacherName" required>
+                </div>
+                <div>
+                    <label for="teacherPhone">Telefone do professor:</label>
+                    <input type="tel" id="teacherPhone" name="teacherPhone" pattern="\(\d{2}\) \d{5}-\d{4}" placeholder="(xx) xxxxx-xxxx" required>
+                </div>
+                <button type="submit">Cadastrar</button>
+                <p id="error-message" class="hidden"></p>
+            </form>
+            <div class="login-link">
+                <p>Já tem uma conta? <a href="login.html">Faça login</a></p>
+            </div>
+        </section>
+        <script src="register.js"></script>
+    </main>
+</body>
+</html>
